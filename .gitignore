@@ -1,0 +1,12 @@
+# terraform files
+.terraform
+**/.terraform/*
+.terraform.d
+*.tfstate
+*.tfstate.*
+.vscode
+.idea
+.idea
+
+# vars 
+**/variables.tf
