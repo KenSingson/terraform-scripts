@@ -146,8 +146,9 @@ resource "aws_instance" "main" {
   instance_type = "t2.micro"
   availability_zone = var.availability_zones["zone_1a"]
   key_name = "kp-dev-aps1-st"
+  
   network_interface {
-    dnetwork_interface_id = aws_network_interface.main.id
+    network_interface_id = aws_network_interface.main.id
     device_index = 0
   }
 
