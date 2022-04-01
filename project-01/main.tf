@@ -7,10 +7,10 @@ terraform {
   }
 
 #   backend "s3" {
-#     bucket = "s3-tfs-dev-st-01"
+#     bucket = var.s3_backend_name
 #     key = "global/s3/terraform.tfstate"
 #     region = "ap-southeast-1"
-#     dynamodb_table = "ddb-tfl-dev-st-01"
+#     dynamodb_table = var.ddb_state_lock
 #     encrypt = true
 #   }
 }
