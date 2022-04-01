@@ -8,8 +8,8 @@ terraform {
 
 #   backend "s3" {
 #     bucket = var.s3_backend_name
-#     key = "global/s3/terraform.tfstate"
-#     region = "ap-southeast-1"
+#     key = var.s3-key-location
+#     region = var.regions["singapore"]
 #     dynamodb_table = var.ddb_state_lock
 #     encrypt = true
 #   }
