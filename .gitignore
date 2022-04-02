@@ -3,11 +3,17 @@
 **/.terraform/*
 .terraform.d
 **/.terraform.*
+**/*.tfplan
 *.tfstate
 *.tfstate.*
 .vscode
 .idea
 .idea
 
+
+
 # vars 
 **/variables.tf
+**/variable.tf
+**/*.*.tfbackend
+**/*.tfvars
