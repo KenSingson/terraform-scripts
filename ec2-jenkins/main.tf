@@ -154,7 +154,6 @@ resource "aws_eip" "main" {
 resource "aws_instance" "main" {
   ami = var.ami_templates["ubuntu20.08"]
   instance_type = "t2.micro"
-  count = 3
   availability_zone = var.availability_zones["zone_1a"]
   key_name = "kp-dev-aps1-st"
   
@@ -164,7 +163,7 @@ resource "aws_instance" "main" {
   }
 
   tags = {
-    "Name" = element(var.instances_names, count.index)
+    "Name" = var.ec2_instance_name
     "Description" = "ubuntu instance"
   }
 
