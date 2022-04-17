@@ -1,0 +1,6 @@
+terraform init -backend-config="config.s3.tfbackend"
+terraform validate
+terraform apply -var-file="before.tfvars" --auto-approve
+terraform apply -var-file="after.tfvars" --auto-approve
+terraform destroy --var-file="before.tfvars" --auto-approve
+terraform destroy --var-file="after.tfvars" --auto-approve

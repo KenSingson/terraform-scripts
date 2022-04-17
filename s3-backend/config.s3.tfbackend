@@ -1,0 +1,5 @@
+bucket = "s3-tfs-gb-st-01"
+key = "global/s3/terraform.tfstate"
+region = "ap-southeast-1"
+dynamodb_table = "ddb-tfl-gb-st-01"
+encrypt = true
