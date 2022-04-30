@@ -10,7 +10,7 @@
 .idea
 .idea
 
-*.pem
+**/*.pem
 
 # vars 
 # **/variables.tf
